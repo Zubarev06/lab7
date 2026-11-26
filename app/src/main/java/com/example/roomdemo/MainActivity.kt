@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             RoomDemoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-
+                    ScreenSetup(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
