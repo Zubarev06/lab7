@@ -9,6 +9,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 class ProductRepository(private val productDao: ProductDao) {
+    fun insertProduct(product: Product) {}
+    fun findProduct(name: String) {}
+    fun deleteProduct(name: String) {}
+
     val allProducts: LiveData<List<Product>> = productDao.getAllProducts()
     val searchResults = MutableLiveData<List<Product>>()
 }
